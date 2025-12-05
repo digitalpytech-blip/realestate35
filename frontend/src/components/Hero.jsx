@@ -46,37 +46,35 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Developer Name */}
           <div className="inline-block mb-6">
-            <span className="text-sm font-semibold tracking-wider text-slate-600 uppercase bg-white/80 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
+            <span className="text-sm font-semibold tracking-wider text-slate-900 uppercase bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg">
               {projectData.developer}
             </span>
           </div>
 
           {/* Project Name */}
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
-            <span className="bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
-              {projectData.name}
-            </span>
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight text-white drop-shadow-2xl">
+            {projectData.name}
           </h1>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-slate-700 font-medium mb-4 tracking-wide">
+          <p className="text-xl md:text-2xl text-white font-medium mb-4 tracking-wide drop-shadow-lg">
             {projectData.tagline}
           </p>
 
           {/* Subtitle */}
-          <p className="text-lg text-slate-600 mb-8">
+          <p className="text-lg text-white/90 mb-8 drop-shadow-md">
             {projectData.subtitle}
           </p>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-md">
             {projectData.description}
           </p>
 
           {/* Location Badge */}
           <div className="flex items-center justify-center space-x-2 mb-12">
-            <MapPin className="h-5 w-5 text-red-600" />
-            <span className="text-sm text-slate-600">Sector-22D, YEIDA, Greater Noida</span>
+            <MapPin className="h-5 w-5 text-red-500" />
+            <span className="text-sm text-white/90 drop-shadow-md">Sector-22D, YEIDA, Greater Noida</span>
           </div>
 
           {/* CTA Buttons */}
