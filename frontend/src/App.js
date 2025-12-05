@@ -9,6 +9,7 @@ import Location from './components/Location';
 import FloorPlans from './components/FloorPlans';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <FloorPlans />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
