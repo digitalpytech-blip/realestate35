@@ -56,26 +56,29 @@ const Hero = () => {
             {projectData.name}
           </h1>
 
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl text-white font-medium mb-4 tracking-wide drop-shadow-lg">
+          {/* Tagline - Hidden on Mobile */}
+          <p className="hidden lg:block text-xl md:text-2xl text-white font-medium mb-4 tracking-wide drop-shadow-lg">
             {projectData.tagline}
           </p>
 
-          {/* Subtitle */}
-          <p className="text-lg text-white/90 mb-8 drop-shadow-md">
+          {/* Subtitle - Hidden on Mobile */}
+          <p className="hidden lg:block text-lg text-white/90 mb-8 drop-shadow-md">
             {projectData.subtitle}
           </p>
 
-          {/* Description */}
-          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-md">
+          {/* Description - Hidden on Mobile */}
+          <p className="hidden lg:block text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-md">
             {projectData.description}
           </p>
 
-          {/* Location Badge */}
-          <div className="flex items-center justify-center space-x-2 mb-12">
+          {/* Location Badge - Hidden on Mobile */}
+          <div className="hidden lg:flex items-center justify-center space-x-2 mb-12">
             <MapPin className="h-5 w-5 text-red-500" />
             <span className="text-sm text-white/90 drop-shadow-md">Sector-22D, YEIDA, Greater Noida</span>
           </div>
+          
+          {/* Mobile spacing */}
+          <div className="lg:hidden mb-12" />
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
