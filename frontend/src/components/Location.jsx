@@ -98,7 +98,7 @@ const Location = () => {
                 </div>
               </div>
             </div>
-          </CardContent>
+          </Card>
         </div>
 
         {/* Address */}
