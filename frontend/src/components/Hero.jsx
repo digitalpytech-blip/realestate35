@@ -82,7 +82,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-6 text-base group"
+              className="bg-white hover:bg-white/90 text-slate-900 px-8 py-6 text-base font-semibold group shadow-xl"
             >
               Schedule Site Visit
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -94,14 +94,14 @@ const Hero = () => {
               }}
               size="lg"
               variant="outline"
-              className="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white px-8 py-6 text-base"
+              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-base font-semibold shadow-xl"
             >
               View Floor Plans
             </Button>
           </div>
 
           {/* RERA */}
-          <div className="mt-16 text-xs text-slate-500">
+          <div className="mt-16 text-xs text-white/70 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full inline-block">
             RERA No: {projectData.rera}
           </div>
         </div>
