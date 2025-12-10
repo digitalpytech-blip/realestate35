@@ -38,13 +38,32 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      toast.success('Thank you! We will contact you soon.');
-      setFormData({ name: '', email: '', phone: '', unitType: '', message: '' });
-      setIsSubmitting(false);
-    }, 1500);
+    // Format WhatsApp message
+    const unitTypeText = {
+      '3bhk-sq': '3 BHK + SQ',
+      '3bhk-sq-max': '3 BHK + SQ MAX',
+      '4bhk-sq': '4 BHK + SQ',
+      '4bhk-sq-max': '4 BHK + SQ MAX',
+      'not-sure': 'Not Sure'
+    };
+
+    let message = `*New Enquiry - Aurum Alumni Bliss*\n\n`;
+    message += `*Name:* ${formData.name}\n`;
+    message += `*Phone:* ${formData.phone}\n`;
+    message += `*Email:* ${formData.email}\n`;
+    if (formData.unitType) message += `*Interested In:* ${unitTypeText[formData.unitType]}\n`;
+    if (formData.message) message += `*Message:* ${formData.message}\n`;
+    message += `\nLooking forward to hearing from you.`;
+
+    const phoneNumber = '919811707522'; // Remove spaces and special characters
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    toast.success('Redirecting to WhatsApp...');
+    setFormData({ name: '', email: '', phone: '', unitType: '', message: '' });
+    setIsSubmitting(false);
   };
 
   return (
