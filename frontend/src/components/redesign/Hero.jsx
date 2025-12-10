@@ -42,17 +42,14 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background */}
+      {/* Background - Single Image */}
       <div className="absolute inset-0">
-        <div className="lg:hidden absolute inset-0">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-            <source src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/j0nzdret_WhatsApp%20Video%202025-12-05%20at%2010.08.30%20AM.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 to-slate-800/80" />
-        </div>
-        <div className="hidden lg:block">
-          <HeroSlider />
-        </div>
+        <img
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85"
+          alt="Luxury Interior"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/75 to-slate-800/85" />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
