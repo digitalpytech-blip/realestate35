@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { projectData } from '../utils/mockData';
 import HeroSlider from './HeroSlider';
+import HeroContactForm from './HeroContactForm';
 
 const Hero = () => {
   const scrollToContact = () => {
