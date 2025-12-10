@@ -100,12 +100,12 @@ const Hero = () => {
             <p className="text-xs text-white/50 mt-4">RERA No: {projectData.rera}</p>
           </div>
 
-          {/* Right Form */}
-          <div className="hidden lg:block">
+          {/* Right Form - Now visible on mobile too */}
+          <div className="w-full">
             <Card className="bg-slate-800/90 backdrop-blur-lg border-slate-700 shadow-2xl">
-              <CardContent className="p-8">
+              <CardContent className="p-6 lg:p-8">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">Book a Site Visit</h3>
+                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Book a Site Visit</h3>
                   <p className="text-sm text-slate-400">Fill the form and we'll get back to you</p>
                 </div>
                 <form onSubmit={handleSubmit} className="space-y-4" id="quick-enquiry">
