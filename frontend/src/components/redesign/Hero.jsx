@@ -64,14 +64,35 @@ const Hero = () => {
                 {projectData.developer} NEW LAUNCH
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight text-white">
               {projectData.name}
             </h1>
-            <div className="flex items-center justify-center lg:justify-start space-x-2 mb-6">
-              <MapPin className="h-5 w-5 text-cyan-400" />
-              <span className="text-lg text-white/90">Sector-22D, YEIDA, Greater Noida</span>
+            <div className="inline-flex items-center space-x-2 mb-6 bg-cyan-500 px-4 py-2 rounded">
+              <MapPin className="h-4 w-4 text-white" />
+              <span className="text-sm font-bold text-white">At Sector-22D, YEIDA, Greater Noida</span>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full" />
+                <span className="text-white text-base">Prime Location</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full" />
+                <span className="text-white text-base">Only 2 Flats Per Floor</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-r from-amber-600 to-amber-800 border-2 border-dashed border-amber-400 rounded-xl p-6 mb-6">
+              <p className="text-white font-bold text-lg mb-2">EOI Window Now Open</p>
+              <p className="text-white/90 text-sm">Avail Exclusive Launch Offers</p>
+            </div>
+            <div className="mb-8">
+              <p className="text-white/90 text-lg mb-2">Ultra-Luxury 3 & 4 BHK Apartments</p>
+              <div className="bg-slate-800/80 inline-block px-6 py-3 rounded-lg">
+                <p className="text-sm text-white/70 mb-1">STARTING AT:</p>
+                <p className="text-3xl font-bold text-white">₹ 3.20 CR*</p>
+              </div>
+            </div>
+            <div className="hidden md:grid grid-cols-2 gap-4 mb-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <p className="text-2xl font-bold text-white">7+ Acres</p>
                 <p className="text-sm text-white/70">Premium Land</p>
