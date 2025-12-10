@@ -37,69 +37,77 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 py-32 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Developer Name */}
-          <div className="inline-block mb-6">
-            <span className="text-sm font-semibold tracking-wider text-slate-900 uppercase bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg">
-              {projectData.developer}
-            </span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          {/* Left Content */}
+          <div className="text-center lg:text-left">
+            {/* Developer Name */}
+            <div className="inline-block mb-6">
+              <span className="text-sm font-semibold tracking-wider text-slate-900 uppercase bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg">
+                {projectData.developer}
+              </span>
+            </div>
+
+            {/* Project Name */}
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-white drop-shadow-2xl">
+              {projectData.name}
+            </h1>
+
+            {/* Tagline - Hidden on Mobile */}
+            <p className="hidden lg:block text-xl md:text-2xl text-white font-medium mb-4 tracking-wide drop-shadow-lg">
+              {projectData.tagline}
+            </p>
+
+            {/* Subtitle - Hidden on Mobile */}
+            <p className="hidden lg:block text-lg text-white/90 mb-6 drop-shadow-md">
+              {projectData.subtitle}
+            </p>
+
+            {/* Description - Hidden on Mobile */}
+            <p className="hidden lg:block text-base text-white/80 mb-8 leading-relaxed drop-shadow-md">
+              {projectData.description}
+            </p>
+
+            {/* Location Badge - Hidden on Mobile */}
+            <div className="hidden lg:flex items-center space-x-2 mb-8">
+              <MapPin className="h-5 w-5 text-red-500" />
+              <span className="text-sm text-white/90 drop-shadow-md">Sector-22D, YEIDA, Greater Noida</span>
+            </div>
+            
+            {/* Mobile spacing */}
+            <div className="lg:hidden mb-8" />
+
+            {/* CTA Buttons - Hidden on Desktop (form replaces them) */}
+            <div className="lg:hidden flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button
+                onClick={scrollToContact}
+                size="lg"
+                className="bg-white hover:bg-white/90 text-slate-900 px-8 py-6 text-base font-semibold group shadow-xl w-full sm:w-auto"
+              >
+                Schedule Site Visit
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button
+                onClick={() => {
+                  const element = document.getElementById('floor-plans');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-base font-semibold shadow-xl w-full sm:w-auto"
+              >
+                View Floor Plans
+              </Button>
+            </div>
+
+            {/* RERA - Desktop Only */}
+            <div className="hidden lg:block mt-8 text-xs text-white/70 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full inline-block">
+              RERA No: {projectData.rera}
+            </div>
           </div>
 
-          {/* Project Name */}
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight text-white drop-shadow-2xl">
-            {projectData.name}
-          </h1>
-
-          {/* Tagline - Hidden on Mobile */}
-          <p className="hidden lg:block text-xl md:text-2xl text-white font-medium mb-4 tracking-wide drop-shadow-lg">
-            {projectData.tagline}
-          </p>
-
-          {/* Subtitle - Hidden on Mobile */}
-          <p className="hidden lg:block text-lg text-white/90 mb-8 drop-shadow-md">
-            {projectData.subtitle}
-          </p>
-
-          {/* Description - Hidden on Mobile */}
-          <p className="hidden lg:block text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-md">
-            {projectData.description}
-          </p>
-
-          {/* Location Badge - Hidden on Mobile */}
-          <div className="hidden lg:flex items-center justify-center space-x-2 mb-12">
-            <MapPin className="h-5 w-5 text-red-500" />
-            <span className="text-sm text-white/90 drop-shadow-md">Sector-22D, YEIDA, Greater Noida</span>
-          </div>
-          
-          {/* Mobile spacing */}
-          <div className="lg:hidden mb-12" />
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              onClick={scrollToContact}
-              size="lg"
-              className="bg-white hover:bg-white/90 text-slate-900 px-8 py-6 text-base font-semibold group shadow-xl"
-            >
-              Schedule Site Visit
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              onClick={() => {
-                const element = document.getElementById('floor-plans');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-base font-semibold shadow-xl"
-            >
-              View Floor Plans
-            </Button>
-          </div>
-
-          {/* RERA */}
-          <div className="mt-16 text-xs text-white/70 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full inline-block">
-            RERA No: {projectData.rera}
+          {/* Right Content - Contact Form (Desktop Only) */}
+          <div className="hidden lg:block">
+            <HeroContactForm />
           </div>
         </div>
       </div>
