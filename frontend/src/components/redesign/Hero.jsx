@@ -6,7 +6,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { MapPin, Phone, Mail, User, Home, Download } from 'lucide-react';
 import { toast } from 'sonner';
 import { projectData } from '../../utils/mockData';
-import HeroSlider from '../HeroSlider';
 
 const Hero = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', unitType: '' });
