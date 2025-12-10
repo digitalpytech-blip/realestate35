@@ -39,20 +39,34 @@ const LocationAdvantage = () => {
             ))}
           </div>
 
-          {/* Map Placeholder */}
+          {/* Google Map */}
           <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-            <div className="aspect-video bg-slate-700 rounded-xl flex items-center justify-center">
-              <div className="text-center text-slate-400">
-                <MapPin className="h-16 w-16 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-semibold">Location Map</p>
-                <p className="text-sm">Sector-22D, YEIDA, Greater Noida</p>
-              </div>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7847845168886!2d77.48956087550064!3d28.45877897574654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1f3c0000001%3A0x1234567890abcdef!2sSector%2022D%2C%20Greater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Project Location Map"
+              />
             </div>
             <div className="mt-6 text-center">
               <p className="text-slate-300 mb-2">
                 <MapPin className="inline h-5 w-5 mr-2 text-cyan-400" />
                 {projectData.contact.projectAddress}
               </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Sector+22D+Greater+Noida+YEIDA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 text-sm font-semibold mt-2"
+              >
+                <MapPin className="h-4 w-4 mr-1" />
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
