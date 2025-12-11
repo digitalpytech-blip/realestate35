@@ -33,7 +33,8 @@ const GetInTouch = () => {
     if (formData.unitType) message += `*Interested In:* ${unitTypeText[formData.unitType]}\n`;
     if (formData.message) message += `*Message:* ${formData.message}\n`;
     message += `\nLooking forward to hearing from you.`;
-    const whatsappUrl = `https://wa.me/919811707522?text=${encodeURIComponent(message)}`;
+    const phoneNumber = '918586946000';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     toast.success('Redirecting to WhatsApp...');
     setFormData({ name: '', email: '', phone: '', unitType: '', message: '' });
