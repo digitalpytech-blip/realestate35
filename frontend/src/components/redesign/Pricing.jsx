@@ -8,7 +8,7 @@ import { projectData } from '../../utils/mockData';
 const Pricing = () => {
   const handleInterested = (planType) => {
     const message = `*Interested in ${planType}*\n\nProject: Aurum Alumni Bliss\nLocation: Sector-22D, YEIDA, Greater Noida\n\nI would like to know more about pricing and availability.`;
-    const whatsappUrl = `https://wa.me/919811707522?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918586946000?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     toast.success('Redirecting to WhatsApp...');
   };
