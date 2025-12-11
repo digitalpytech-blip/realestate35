@@ -65,11 +65,14 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* Contact */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a href={`tel:${projectData.contact.phones[0]}`} className="flex items-center space-x-2 text-white/90 hover:text-cyan-400 transition-colors">
-              <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">{projectData.contact.phones[0]}</span>
+          {/* Call Button */}
+          <div className="hidden lg:flex items-center">
+            <a 
+              href={`tel:${projectData.contact.phones[0]}`} 
+              className="flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full transition-all font-semibold"
+            >
+              <Phone className="h-5 w-5" />
+              <span>Call Now</span>
             </a>
           </div>
 
