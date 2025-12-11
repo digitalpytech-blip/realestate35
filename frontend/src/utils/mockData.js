@@ -6,7 +6,7 @@ export const projectData = {
   description: "Experience luxury living across 7+ acres with only 528 exclusive units. Where modern architecture meets natural serenity.",
   
   contact: {
-    phones: ["+91 9811707522", "+91 8586946000"],
+    phones: ["+91 8586946000"],
     email: "info@citibricks.in",
     address: "Plot No 21,21A 3rd floor sector 142 Noida 202301",
     projectAddress: "Plot No P-3 & P-4/ TS-2A, Sector-22D, YEIDA, District Gautam Budh Nagar, Uttar Pradesh"
