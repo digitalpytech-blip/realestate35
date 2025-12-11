@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <img
-              src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/fgkq0s5d_medium.avif"
+              src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/6t2qzgj5_Untitled%20design%20%2822%29.png"
               alt="Aurum Alumni Bliss"
               className="h-12 w-auto mb-6"
             />
