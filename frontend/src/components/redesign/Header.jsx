@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img
-              src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/u7t9nq3j_project-logo%20%282%29.webp"
+              src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/fgkq0s5d_medium.avif"
               alt="Aurum Alumni Bliss"
               className="h-12 w-auto"
             />
