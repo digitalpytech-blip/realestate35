@@ -41,11 +41,11 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background - Single Image */}
+      {/* Background - Project Banner */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85"
-          alt="Luxury Interior"
+          src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/uln6mx15_banner.webp"
+          alt="Aurum Alumni Bliss"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/75 to-slate-800/85" />
