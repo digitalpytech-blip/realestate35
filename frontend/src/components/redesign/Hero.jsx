@@ -77,9 +77,9 @@ const Hero = () => {
                 <span className="text-white text-base">Only 2 Flats Per Floor</span>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-amber-600 to-amber-800 border-2 border-dashed border-amber-400 rounded-xl p-6 mb-6">
-              <p className="text-white font-bold text-lg mb-2">EOI Window Now Open</p>
-              <p className="text-white/90 text-sm">Avail Exclusive Launch Offers</p>
+            <div className="bg-gradient-to-r from-amber-600 to-amber-800 border-2 border-dashed border-amber-400 rounded-xl p-4 mb-6">
+              <p className="text-white font-bold text-base mb-1">EOI Window Now Open</p>
+              <p className="text-white/90 text-xs">Avail Exclusive Launch Offers</p>
             </div>
             <div className="mb-8">
               <p className="text-white/90 text-lg mb-2">Ultra-Luxury 3 & 4 BHK Apartments</p>
