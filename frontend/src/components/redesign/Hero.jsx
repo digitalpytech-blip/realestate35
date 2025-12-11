@@ -32,7 +32,7 @@ const Hero = () => {
     if (formData.email) message += `*Email:* ${formData.email}\n`;
     if (formData.unitType) message += `*Interested In:* ${unitTypeText[formData.unitType]}\n`;
     message += `\nI would like to book a site visit.`;
-    const whatsappUrl = `https://wa.me/919811707522?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918586946000?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     toast.success('Redirecting to WhatsApp...');
     setFormData({ name: '', phone: '', email: '', unitType: '' });
