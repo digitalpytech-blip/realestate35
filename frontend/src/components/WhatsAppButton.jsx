@@ -4,7 +4,7 @@ import { projectData } from '../utils/mockData';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = projectData.contact.phones[0].replace(/[^0-9]/g, '');
+    const phoneNumber = '918586946000';
     const message = encodeURIComponent('Hi, I am interested in Aurum Alumni Bliss. Please share more details.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
