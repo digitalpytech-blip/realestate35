@@ -19,7 +19,7 @@ const AboutDeveloper = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <img
-                src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/fgkq0s5d_medium.avif"
+                src="https://customer-assets.emergentagent.com/job_pdf-landing-pro/artifacts/6t2qzgj5_Untitled%20design%20%2822%29.png"
                 alt="Aurum Alumni Bliss"
                 className="h-20 mb-6"
               />
