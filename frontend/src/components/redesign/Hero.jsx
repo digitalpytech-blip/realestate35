@@ -67,21 +67,21 @@ const Hero = () => {
               <MapPin className="h-4 w-4 text-white" />
               <span className="text-sm font-bold text-white">At Sector-22D, YEIDA, Greater Noida</span>
             </div>
-            <div className="space-y-3 mb-6">
+            <div className="space-y-2 mb-4">
               <div className="flex items-center space-x-2">
                 <div className="w-1.5 h-1.5 bg-white rounded-full" />
-                <span className="text-white text-base">Prime Location</span>
+                <span className="text-white text-sm">Prime Location</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-1.5 h-1.5 bg-white rounded-full" />
-                <span className="text-white text-base">Only 2 Flats Per Floor</span>
+                <span className="text-white text-sm">Only 2 Flats Per Floor</span>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-amber-600 to-amber-800 border-2 border-dashed border-amber-400 rounded-xl p-4 mb-6">
+            <div className="bg-gradient-to-r from-amber-600 to-amber-800 border-2 border-dashed border-amber-400 rounded-xl p-3 mb-4">
               <p className="text-white font-bold text-base mb-1">EOI Window Now Open</p>
               <p className="text-white/90 text-xs">Avail Exclusive Launch Offers</p>
             </div>
-            <div className="mb-8">
+            <div className="mb-6">
               <p className="text-white/90 text-lg mb-2">Ultra-Luxury 3 & 4 BHK Apartments</p>
               <div className="bg-slate-800/80 inline-block px-6 py-3 rounded-lg">
                 <p className="text-sm text-white/70 mb-1">STARTING AT:</p>
